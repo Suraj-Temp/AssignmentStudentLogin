@@ -62,9 +62,9 @@ class ViewController: UIViewController {
      func CheckTimeInterval()->Bool{
         var timeIntervalVerified:Bool
         let calendar = Calendar.current
-        let startTimeComponent = DateComponents(calendar: calendar, hour:14,minute: 00,second: 00)
+        let startTimeComponent = DateComponents(calendar: calendar, hour:08,minute: 00,second: 00)
         print(startTimeComponent,"startTimeComponent")
-        let endTimeComponent   = DateComponents(calendar: calendar, hour: 14, minute: 14,second: 00)
+        let endTimeComponent   = DateComponents(calendar: calendar, hour: 10, minute: 00,second: 00)
     print(endTimeComponent.hour,endTimeComponent.minute,endTimeComponent.second,"endTimeComponent")
        
         let componets = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
